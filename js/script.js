@@ -75,7 +75,7 @@ function updateClock() {
 
 function searchBox(url, name, placeholder) {
 	var string = '<form method="get" action="' + url + '"'
-		   + settings.navigation.newWindow ? target="_blank" : ''
+		   + (settings.navigation.newWindow ? 'target="_blank"' : '')
 		   + '>'
 	           + '<input type="text" id="g" name="' + name + '" placeholder="' + placeholder + '" maxlength="255" value="">'
 	           + '<input type="submit" value="Go">'
